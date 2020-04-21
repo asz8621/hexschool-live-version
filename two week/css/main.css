@@ -47,12 +47,13 @@ h3{
     max-width: 1920px;
     margin: 0 auto;
 }
+
+/* 共用 */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 64px;
 }
-/* 共用 */
 .bg-black{
     background-color: black;
 }
@@ -62,12 +63,15 @@ h3{
 .text-center{
     text-align: center;
 }
-.pb-3{
-    padding-bottom: 1.5rem;
-}
 .fs-normal{
     font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
+}
+.f-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* header */
@@ -77,17 +81,10 @@ h3{
     background-position:center center;
     max-width: 1920px;
     height: 960px;
-}
-.header-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 100px; 
-    height: 100%;
-    margin: 0 auto;
 }
-.header-content span{
+
+.header span{
     line-height: 28px;
     width: 303px;
 }
@@ -106,8 +103,9 @@ h3{
 .about{
     margin-bottom: 24px;
 }
-.about img{
-    margin:24px auto;
+.headshot{
+    /* margin:24px auto; */
+    margin:24px 0;
 }
 .education{
     border-bottom: 1px solid #000;
@@ -143,10 +141,9 @@ h3{
 }
 
 /* brand-品牌 */
-    .brand-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .slogan{
+        padding-bottom: 1.5rem;
+        line-height: 28px;
     }
     .introduce{
         padding: 8px 0;
@@ -175,9 +172,14 @@ h3{
     .brand-clothes li:nth-child(2), .brand-clothes li:nth-child(3){
         max-width: 588px;
     }
+
 /* works-工作作品 */
     .works{
         font-size: 20px;
+    }
+    .works-bg{
+        background: url(../images/photo-1561291386-5be50364cfb5.png) no-repeat;
+        background-position: bottom;
     }
     .card{
         margin: 0 auto;
@@ -187,18 +189,14 @@ h3{
         color: #fff;
         margin-bottom: 40px;
     }
-    .card li{
+    .card .card-item{
         cursor: pointer;
         transition: all .3s;
     }
-    .card li:hover{
+    .card .card-item:hover{
         color: #ff7171;
         transform: scale(1.05);
         font-weight: bold;
-    }
-    .works-bg{
-        background: url(../images/photo-1561291386-5be50364cfb5.png) no-repeat;
-        background-position: bottom;
     }
     .works-text{
         padding: 8px 0 48px 0;
