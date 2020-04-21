@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+  }
+ul,p{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1{
+    margin: 0;
+    font-size: 80px;
+    line-height: 94px;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+h2{
+    margin: 0;
+    font-size: 64px;
+    line-height: 75px;
+    padding: 64px 0 16px 0;
+    /* padding-bottom: 16px; */
+    font-weight: 700;
+}
+h3{
+    font-size: 20px;
+    line-height: 28px;
+    margin: 16px 0 56px 0;
+    /* margin-bottom: 56px; */
+    font-weight: 400;
+}
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+/* 共用 */
+.bg-black{
+    background-color: black;
+}
+.text-white{
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+.pb-3{
+    padding-bottom: 1.5rem;
+}
+.fs-normal{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+}
+
+/* header */
+.header-bg{
+    background: url('../images/banner.png') no-repeat;
+    background-size: cover;
+    background-position:center center;
+    max-width: 1920px;
+    height: 960px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; 
+    height: 100%;
+    margin: 0 auto;
+}
+.header-content span{
+    line-height: 28px;
+    width: 303px;
+}
+.subtitle{
+    line-height: 35px;
+    margin-bottom: 64px;
+    width: 283px;
+}
+.info-link{
+    display: flex;
+    justify-content: space-between;
+    width: 283px;
+}
+
+/* about-關於我 */
+.about{
+    margin-bottom: 24px;
+}
+.about img{
+    margin:24px auto;
+}
+.education{
+    border-bottom: 1px solid #000;
+    margin-bottom: 34px;
+    font-weight: bold;
+}
+.education li{
+    padding-bottom: 8px;
+    line-height: 28px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.experience li{
+    position: relative;
+    padding-bottom: 32px;
+    line-height: 28px;
+}
+.experience li::before{
+    content: '';
+    position: absolute;
+    background: #891818;
+    padding: 11px;
+    border-radius: 50%;
+    left: -35px;
+    top: 2px;
+}
+.education li:last-child{
+    line-height: 32px;
+}
+
+/* brand-品牌 */
+    .brand-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduce{
+        padding: 8px 0;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .brand-clothes{
+        margin: 0 auto 96px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .brand-clothes li{
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .brand-clothes li:hover{
+        box-shadow: 0 0 0 10px #fff;
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    .brand-clothes li:first-child{
+        margin: 40px auto;
+    }
+    .brand-clothes li:nth-child(2), .brand-clothes li:nth-child(3){
+        max-width: 588px;
+    }
+/* works-工作作品 */
+    .works{
+        font-size: 20px;
+    }
+    .card{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .card li{
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .card li:hover{
+        color: #ff7171;
+        transform: scale(1.05);
+        font-weight: bold;
+    }
+    .works-bg{
+        background: url(../images/photo-1561291386-5be50364cfb5.png) no-repeat;
+        background-position: bottom;
+    }
+    .works-text{
+        padding: 8px 0 48px 0;
+        line-height: 34px;
+    }
+
+/* footer */
+    .footer-content{
+        padding-bottom: 64px;
+    }
+    .contact li{
+        padding-bottom: 16px;
+        line-height: 33px;
+    }
+    .contact li a{
+        color: #fff;
+    }
+    .contact li a:hover{
+        color: #e7e7e7; 
+        text-decoration: underline;
+    }
