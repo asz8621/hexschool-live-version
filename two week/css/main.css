@@ -41,10 +41,6 @@ h3{
     margin: 16px 0 56px 0;
     font-weight: 400;
 }
-.wrap{
-    max-width: 1920px;
-    margin: 0 auto;
-}
 
 /* 共用 */
     .container{
@@ -140,7 +136,7 @@ h3{
 
 /* brand-品牌 */
     .slogan{
-        padding-bottom: 1.5rem;
+        padding-bottom: 24px;
         line-height: 28px;
     }
     .introduce{
@@ -202,7 +198,7 @@ h3{
     }
 
 /* footer */
-    .footer-content{
+    .footer{
         padding-bottom: 64px;
     }
     .contact li{
