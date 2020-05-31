@@ -1,0 +1,130 @@
+body{
+    box-sizing: border-box;
+    color: #121212;
+}
+a,a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+li,ol{
+    list-style: none;
+}
+.list-style li, .list-style ol{
+    list-style: disc inside;
+}
+mark{
+    color: #2A8356;
+    background-color: #edf4ee;
+    font-weight: 500;
+}
+// 自動填寫input
+input:-internal-autofill-selected{
+    -webkit-box-shadow: 0 0 0px 1000px #EDF4EE inset;
+    -webkit-text-fill-color: #121212;
+    border: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+    -webkit-box-shadow: 0 0 0px 1000px #EDF4EE inset;
+    -webkit-text-fill-color: #121212;
+    border: none;
+}
+/* 文字大小 */
+.text-small{
+    font-size: 12px;
+}
+.text-middle{
+    font-size: 14px;
+}
+/* material 樣式 */
+.material-icons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* ckeditor */
+.cke_top, .cke_bottom{
+    background: #edf4ed !important;
+}
+
+
+.navBar{
+    height: 100vh;
+    max-width: 296px;
+    .logo{
+        margin-bottom: 19px;
+    }
+}
+
+.listGroupHeight {
+    max-height: 850px;
+    overflow-y: auto;
+}
+
+.respond{
+    position: relative;
+    z-index: 1;    
+}
+.respondBtn.hide{
+    display: none!important;
+}
+.respondForm{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: -16px;
+    z-index: 2;
+    transition: .5s;
+    opacity: 0;
+    width: calc(100% + 32px);
+}
+.respondForm.show{
+    visibility: visible;
+    top: 0;
+    right: -16px;
+    opacity: 1;
+}
+
+.closePos{
+    position: absolute;
+    top: 32px;
+    right: 36px; 
+}
+.downIcon{
+    i{
+        transition: all .3s;
+    } 
+}
+.downIcon.spin{
+    transition: all .3s;
+    margin-bottom: 36px;
+    i{
+        transform:rotate(180deg);
+    } 
+}
+.operatingBtn{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.operatingBtn.show{
+    visibility: visible;
+    opacity: 1;
+    position: initial;
+    top: 72px;
+    left: 0;
+}

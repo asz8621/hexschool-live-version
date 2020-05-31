@@ -1,0 +1,52 @@
+/*!
+ * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "../packages/bootstrap/scss/functions";
+@import "variables";
+@import "../packages/bootstrap/scss/mixins";
+@import "utilities";
+
+// Layout & components
+@import "../packages/bootstrap/scss/root";                 // 全域變數
+@import "../packages/bootstrap/scss/reboot";               // reset
+@import "../packages/bootstrap/scss/type";                 // HTML標籤類
+@import "../packages/bootstrap/scss/containers";           // 容器
+@import "../packages/bootstrap/scss/grid";                 // 網格系統
+@import "../packages/bootstrap/scss/tables";               // 表格
+@import "../packages/bootstrap/scss/forms";                // 表單
+@import "../packages/bootstrap/scss/transitions";          // 動畫效果
+@import "../packages/bootstrap/scss/dropdown";             // 下拉選單
+@import "../packages/bootstrap/scss/buttons";              // 按鈕
+@import "../packages/bootstrap/scss/button-group";         // 按鈕群組
+@import "../packages/bootstrap/scss/nav";                  // 導覽
+@import "../packages/bootstrap/scss/card";                 // 卡片
+@import "../packages/bootstrap/scss/pagination";           // 頁碼
+@import "../packages/bootstrap/scss/list-group";           // 群組列表
+@import "../packages/bootstrap/scss/close";                // 關閉icon
+@import "../packages/bootstrap/scss/modal";                // 互動視窗
+// @import "../packages/bootstrap/scss/images";            // 圖片
+// @import "../packages/bootstrap/scss/navbar";            // 導覽列
+// @import "../packages/bootstrap/scss/breadcrumb";        // 麵包屑
+// @import "../packages/bootstrap/scss/badge";             // 膠囊標籤
+// @import "../packages/bootstrap/scss/alert";             // 警報視窗
+// @import "../packages/bootstrap/scss/progress";          // 進度條
+// @import "../packages/bootstrap/scss/toasts";            // 吐司(提示訊息)
+// @import "../packages/bootstrap/scss/tooltip";           // hover按鈕提示
+// @import "../packages/bootstrap/scss/popover";           // click按鈕提示
+// @import "../packages/bootstrap/scss/carousel";          // 輪播
+// @import "../packages/bootstrap/scss/spinners";          // 讀取圖示
+
+// Helpers
+@import "../packages/bootstrap/scss/helpers";
+
+// Utilities
+@import "../packages/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+@import "style"; 

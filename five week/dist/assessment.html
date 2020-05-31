@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/all.css">
+</head>
+
+<body>
+  <div class="wrap d-flex">
+    <nav class="navBar p-5 d-flex flex-column justify-content-between bg-secondary">
+        <div>
+            <div class="logo"><a href="/"><img src="assets/images/logo-ANSWER.svg" alt="logo"></a></div>
+            <ul class="menu font-weight-bold">
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="javascript:void(0);">
+                    <i class="material-icons mr-3">assessment</i><span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="javascript:void(0);">
+                    <i class="material-icons mr-3">forum</i>Question
+                  </a>
+                </li>
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="assessment.html">
+                    <i class="material-icons mr-3">assignment</i>Assignment
+                  </a>
+                </li>
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="javascript:void(0);">
+                    <i class="material-icons mr-3">video_library</i>Course
+                  </a>
+                </li>
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="admin.html">
+                    <i class="material-icons mr-3">people_alt</i>Admin
+                  </a>
+                </li>
+                <li class="py-3">
+                  <a class="text-dark d-flex align-items-center" href="javascript:void(0);">
+                    <i class="material-icons mr-3">settings</i>Settings
+                  </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center">
+            <span class="mr-3"><img class="rounded-circle" src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" width="40" height="40" alt="avatar"></span>
+            <span class="flex d-flex flex-column">
+                <strong class="mb-1 font-weight-bold">Andy Chen</strong>
+                <small class="text-muted">andy0401@mail.com</small>
+            </span>
+        </div>
+    </nav>
+
+      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 d-flex justify-content-between">
+                    <div class="l d-flex align-items-center font-weight-bold">
+                        <h2 class="pr-8">Assignment</h2>
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle  font-weight-bold" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All Courses
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">All Courses</a>
+                              <a class="dropdown-item" href="#">HTML&CSS</a>
+                              <a class="dropdown-item" href="#">jQuery</a>
+                              <a class="dropdown-item" href="#">JavaScript</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="r d-flex">
+                        <i class="material-icons mr-4">search</i>
+                        <i class="material-icons">notifications_active</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-2">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle font-weight-bold" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All (4)
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">All (4)</a>
+                            <a class="dropdown-item" href="#">Seen (4)</a>
+                            <a class="dropdown-item" href="#">Unread (0)</a>
+                        </div>
+                    </div>
+                    <span class="text-muted text-small">2 comments</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="list-group listGroupHeight" id="list-tab" role="tablist">
+                    <!-- click-1 -->
+                    <a class="list-group-item list-group-item-action p-3 border active" data-toggle="list" href="#list1" role="tab">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-small">Chapter Assignment 2</small>
+                            <span class="text-small">4 hrs ago</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Please check this file…</span>
+                            <small class="text-muted text-small">Emily Wang</small>
+                        </div>
+                    </a>
+                    <!-- click-2 -->
+                    <a class="list-group-item list-group-item-action p-3 border" data-toggle="list" href="#list2" role="tab">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-small">Chapter Assignment 1</small>
+                            <span class="text-small">12 hrs ago</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">My Homework</span>
+                            <small class="text-muted text-small">David Xu</small>
+                        </div>
+                    </a>
+                    <!-- click-3 -->
+                    <a class="list-group-item list-group-item-action p-3 border" data-toggle="list" href="#list3" role="tab">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-small">Final Assignment</small>
+                            <span class="text-small">18 hrs ago</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Have a problem with this…</span>
+                            <small class="text-muted text-small">Tony Wei</small>
+                        </div>
+                    </a>
+                    <!-- click-4 -->
+                    <a class="list-group-item list-group-item-action p-3 border" data-toggle="list" href="#list4" role="tab">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-small">Final Assignment</small>
+                            <span class="text-small">19 hrs ago</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Did I do it right?</span>
+                            <small class="text-muted text-small">Christina Lin</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                <!-- show-1 -->
+                <div class="tab-pane fade show active" id="list1" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12 asw">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header d-flex justify-content-between bg-secondary align-items-center">
+                                    <div>
+                                        <h5 class="text-small">Chapter Assignment 2 / HTML&CSS</h5>
+                                        <span class="font-weight-bold">Please check this file for me, thanks!</span>
+                                    </div>
+                                    <i class="material-icons">more_vert</i>                                                
+                                </div>
+                                <div class="card-body pos-r">
+                                    <div class="card-title d-flex align-items-center">
+                                    <span class="mr-2">
+                                        <img class="rounded-circle" src="assets/images/photo-1504051771394-dd2e66b2e08f.jpg" width="40" height="40" alt="avatar">
+                                    </span>
+                                    <span class="d-flex flex-column">
+                                        <strong class="mb-1 font-weight-bold">Emily Wang</strong>
+                                        <small class="text-muted text-small">10:38 AM (4 hours ago)</small>
+                                    </span>
+                                    </div>
+                                    <div class="pl-7 pr-3">
+                                        <p class="card-text">
+                                            <span>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the </span>
+                                            <mark>div</mark>
+                                            <span> is bigger than the height of the </span>
+                                            <mark>img</mark>
+                                            <span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</span>
+                                        </p>
+                                        <a class="btn btn-secondary border" href="#">HW-2-David.zip</a>
+                                        <hr>
+                                    </div>
+                                    <div class="respond">
+                                        <div class="card-title d-flex align-items-center">
+                                            <span class="mr-2">
+                                                <img class="rounded-circle" src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" width="40" height="40" alt="avatar">
+                                            </span>
+                                            <span class="d-flex flex-column">
+                                                <span class="mb-1 font-weight-bold">Andy Chen (You)</span>
+                                                <small class="text-muted text-small">13:24 AM (1 hours ago)</small>
+                                            </span>
+                                            <div class="ml-auto">
+                                                <i class="material-icons mr-4">star_border</i>
+                                                <i class="material-icons">edit</i>
+                                            </div>
+                                        </div>
+                                        <div class="pl-7 pr-3">
+                                            <p class="card-text">Hi Emily Wang, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                                            <p>You can:</p>
+                                                <ul class="list-style">
+                                                    <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )</li>
+                                                    <li>change the <mark>display</mark> so it isn’t inline.</li>
+                                                </ul>
+                                        </div>
+                                        <!-- Respond Modal -->
+                                        <form class="respondForm" method="POST" action="#">
+                                            <textarea name="editor" class="editor" rows="10" cols="80"></textarea>
+                                            <div class="btn-group w-25 d-flex ml-auto mt-2" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary rounded mr-2 cancel">Cancel</button>
+                                                <button type="button" class="btn btn-primary rounded">Reply</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="respondBtn d-flex justify-content-between">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <i class="material-icons mr-4">chevron_left</i>
+                                    <i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-primary mr-3 rounded">Mark as read</button>
+                                    <button type="button" class="btn btn-primary rounded reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- show-2 -->
+                <div class="tab-pane fade" id="list2" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12 asw">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header d-flex justify-content-between bg-secondary align-items-center">
+                                    <div>
+                                        <h5 class="text-small">Chapter Assignment 1 / HTML&CSS</h5>
+                                        <span class="font-weight-bold">My Homework</span>
+                                    </div>
+                                    <i class="material-icons">more_vert</i>                                                
+                                </div>
+                                <div class="card-body pos-r">
+                                    <div class="card-title d-flex align-items-center">
+                                    <span class="mr-2">
+                                        <img class="rounded-circle" src="assets/images/photo-1555410036852-dd2e66b2e08f.jpg" width="40" height="40" alt="avatar">
+                                    </span>
+                                    <span class="d-flex flex-column">
+                                        <strong class="mb-1 font-weight-bold">David Xu</strong>
+                                        <small class="text-muted text-small">08:48 AM (12 hrs ago)</small>
+                                    </span>
+                                    </div>
+                                    <div class="pl-7 pr-3">
+                                        <p class="card-text">
+                                            <span>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the </span>
+                                            <mark>div</mark>
+                                            <span> is bigger than the height of the </span>
+                                            <mark>img</mark>
+                                            <span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</span>
+                                        </p>
+                                        <a class="btn btn-secondary border" href="#">HW-1-David.zip</a>
+                                        <hr>
+                                    </div>
+                                    <div class="respond">
+                                        <div class="card-title d-flex align-items-center">
+                                            <span class="mr-2">
+                                                <img class="rounded-circle" src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" width="40" height="40" alt="avatar">
+                                            </span>
+                                            <span class="d-flex flex-column">
+                                                <span class="mb-1 font-weight-bold">Andy Chen (You)</span>
+                                                <small class="text-muted text-small">13:24 AM (1 hours ago)</small>
+                                            </span>
+                                            <div class="ml-auto">
+                                                <i class="material-icons mr-4">star_border</i>
+                                                <i class="material-icons">edit</i>
+                                            </div>
+                                        </div>
+                                        <div class="pl-7 pr-3">
+                                            <p class="card-text">Hi Emily Wang, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                                            <p>You can:</p>
+                                                <ul class="list-style">
+                                                    <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )</li>
+                                                    <li>change the <mark>display</mark> so it isn’t inline.</li>
+                                                </ul>
+                                        </div>
+                                        <!-- Respond Modal -->
+                                        <form class="respondForm" method="POST" action="#">
+                                            <textarea name="editor" class="editor" rows="10" cols="80"></textarea>
+                                            <div class="btn-group w-25 d-flex ml-auto mt-2" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary rounded mr-2 cancel">Cancel</button>
+                                                <button type="button" class="btn btn-primary rounded">Reply</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="respondBtn d-flex justify-content-between">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <i class="material-icons mr-4">chevron_left</i>
+                                    <i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-primary mr-3 rounded">Mark as read</button>
+                                    <button type="button" class="btn btn-primary rounded reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- show-3 -->
+                <div class="tab-pane fade" id="list3" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12 asw">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header d-flex justify-content-between bg-secondary align-items-center">
+                                    <div>
+                                        <h5 class="text-small">Final Assignment</h5>
+                                        <span class="font-weight-bold">Have a problem with this JavaScript not working!!</span>
+                                    </div>
+                                    <i class="material-icons">more_vert</i>                                                
+                                </div>
+                                <div class="card-body pos-r">
+                                    <div class="card-title d-flex align-items-center">
+                                    <span class="mr-2">
+                                        <img class="rounded-circle" src="assets/images/photo-1562419600347-ef66d5d5e33g.jpg" width="40" height="40" alt="avatar">
+                                    </span>
+                                    <span class="d-flex flex-column">
+                                        <strong class="mb-1 font-weight-bold">Tony Wei</strong>
+                                        <small class="text-muted text-small">6:38 AM (4 hours ago)</small>
+                                    </span>
+                                    </div>
+                                    <div class="pl-7 pr-3">
+                                        <p class="card-text">
+                                            <span>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the </span>
+                                            <mark>div</mark>
+                                            <span> is bigger than the height of the </span>
+                                            <mark>img</mark>
+                                            <span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</span>
+                                        </p>
+                                        <a class="btn btn-secondary border" href="#">JavaScript.zip</a>
+                                        <hr>
+                                    </div>
+                                    <div class="respond">
+                                        <div class="card-title d-flex align-items-center">
+                                            <span class="mr-2">
+                                                <img class="rounded-circle" src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" width="40" height="40" alt="avatar">
+                                            </span>
+                                            <span class="d-flex flex-column">
+                                                <span class="mb-1 font-weight-bold">Andy Chen (You)</span>
+                                                <small class="text-muted text-small">13:24 AM (1 hours ago)</small>
+                                            </span>
+                                            <div class="ml-auto">
+                                                <i class="material-icons mr-4">star_border</i>
+                                                <i class="material-icons">edit</i>
+                                            </div>
+                                        </div>
+                                        <div class="pl-7 pr-3">
+                                            <p class="card-text">Hi Emily Wang, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                                            <p>You can:</p>
+                                                <ul class="list-style">
+                                                    <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )</li>
+                                                    <li>change the <mark>display</mark> so it isn’t inline.</li>
+                                                </ul>
+                                        </div>
+                                        <!-- Respond Modal -->
+                                        <form class="respondForm" method="POST" action="#">
+                                            <textarea name="editor" class="editor" rows="10" cols="80"></textarea>
+                                            <div class="btn-group w-25 d-flex ml-auto mt-2" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary rounded mr-2 cancel">Cancel</button>
+                                                <button type="button" class="btn btn-primary rounded">Reply</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="respondBtn d-flex justify-content-between">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <i class="material-icons mr-4">chevron_left</i>
+                                    <i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-primary mr-3 rounded">Mark as read</button>
+                                    <button type="button" class="btn btn-primary rounded reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- show-4 -->
+                <div class="tab-pane fade" id="list4" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12 asw">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header d-flex justify-content-between bg-secondary align-items-center">
+                                    <div>
+                                        <h5 class="text-small">Final Assignment</h5>
+                                        <span class="font-weight-bold">Did I do it right?</span>
+                                    </div>
+                                    <i class="material-icons">more_vert</i>                                                
+                                </div>
+                                <div class="card-body pos-r">
+                                    <div class="card-title d-flex align-items-center">
+                                    <span class="mr-2">
+                                        <img class="rounded-circle" src="assets/images/photo-1578200594446-yh225ehwe699.jpg" width="40" height="40" alt="avatar">
+                                    </span>
+                                    <span class="d-flex flex-column">
+                                        <strong class="mb-1 font-weight-bold">Christina Lin</strong>
+                                        <small class="text-muted text-small">9:38 AM (4 hours ago)</small>
+                                    </span>
+                                    </div>
+                                    <div class="pl-7 pr-3">
+                                        <p class="card-text">
+                                            <span>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the </span>
+                                            <mark>div</mark>
+                                            <span> is bigger than the height of the </span>
+                                            <mark>img</mark>
+                                            <span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</span>
+                                        </p>
+                                        <a class="btn btn-secondary border" href="#">HW-ALL.zip</a>
+                                        <hr>
+                                    </div>
+                                    <div class="respond">
+                                        <div class="card-title d-flex align-items-center">
+                                            <span class="mr-2">
+                                                <img class="rounded-circle" src="assets/images/photo-1514794749374-fb67509dbb7f.jpg" width="40" height="40" alt="avatar">
+                                            </span>
+                                            <span class="d-flex flex-column">
+                                                <span class="mb-1 font-weight-bold">Andy Chen (You)</span>
+                                                <small class="text-muted text-small">13:24 AM (1 hours ago)</small>
+                                            </span>
+                                            <div class="ml-auto">
+                                                <i class="material-icons mr-4">star_border</i>
+                                                <i class="material-icons">edit</i>
+                                            </div>
+                                        </div>
+                                        <div class="pl-7 pr-3">
+                                            <p class="card-text">Hi Emily Wang, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                                            <p>You can:</p>
+                                                <ul class="list-style">
+                                                    <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> )</li>
+                                                    <li>change the <mark>display</mark> so it isn’t inline.</li>
+                                                </ul>
+                                        </div>
+                                        <!-- Respond Modal -->
+                                        <form class="respondForm" method="POST" action="#">
+                                            <textarea name="editor" class="editor" rows="10" cols="80"></textarea>
+                                            <div class="btn-group w-25 d-flex ml-auto mt-2" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary rounded mr-2 cancel">Cancel</button>
+                                                <button type="button" class="btn btn-primary rounded">Reply</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="respondBtn d-flex justify-content-between">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <i class="material-icons mr-4">chevron_left</i>
+                                    <i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-primary mr-3 rounded">Mark as read</button>
+                                    <button type="button" class="btn btn-primary rounded reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="assets/packages/ckeditor/ckeditor.js"></script>
+  <script src="assets/js/all.js"></script>
+  <script>
+      // 載入 ckeditor 套件
+      CKEDITOR.replaceClass = 'editor';
+
+      // ckeditor 顯示
+      $('.respondBtn .reply').click(function(event) {
+          // 隱藏 respondBtn
+          $(this).parent().parent().toggleClass('hide');
+          // 顯示 ckeditor
+          $(this).parent().parent().parent().find('.respondForm').addClass('show')
+          // 移除其他 ckeditor 顯示
+          $(this).parent().parent().parent().siblings().find(this).removeClass('show');
+      });
+
+      // ckeditor 關閉
+      $('.cancel').click(function(){  
+          $('.respondBtn').removeClass('hide');
+          $('.respondForm').removeClass('show');
+      });
+  </script>
+</body>
+
+</html>
