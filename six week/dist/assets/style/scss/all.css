@@ -7790,6 +7790,46 @@ body.noScroll {
 .header.checkoutProcess .trademark {
   color: #121212; }
 
+.subscription {
+  height: 400px; }
+  @media (max-width: 575px) {
+    .subscription {
+      height: 225px; } }
+  @media (max-width: 374px) {
+    .subscription {
+      height: 275px; } }
+  @media (max-width: 575px) {
+    .subscription .title {
+      text-align: left; } }
+
+.subscriptionBg {
+  background-image: url(../images/subscription-bg.jpg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media (max-width: 767px) {
+    .subscriptionBg {
+      -webkit-filter: brightness(0.5);
+              filter: brightness(0.5); } }
+
+.declare a {
+  display: block; }
+
+@media (max-width: 767px) {
+  .declare {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; } }
+
+.swiper-slide {
+  width: 350px !important; }
+  @media (max-width: 767px) {
+    .swiper-slide {
+      width: 240px !important; } }
+
 .introduction {
   background-image: url("../images/index-5.jpg");
   height: 400px; }
@@ -8190,45 +8230,5 @@ input[type=checkbox]:checked:after {
         bottom: 24px; } }
   .complete.header .navbarMenu, .complete.header .cart, .complete.header .mobileBar {
     display: none !important; }
-
-.subscription {
-  height: 400px; }
-  @media (max-width: 575px) {
-    .subscription {
-      height: 225px; } }
-  @media (max-width: 374px) {
-    .subscription {
-      height: 275px; } }
-  @media (max-width: 575px) {
-    .subscription .title {
-      text-align: left; } }
-
-.subscriptionBg {
-  background-image: url(../images/subscription-bg.jpg);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  @media (max-width: 767px) {
-    .subscriptionBg {
-      -webkit-filter: brightness(0.5);
-              filter: brightness(0.5); } }
-
-.declare a {
-  display: block; }
-
-@media (max-width: 767px) {
-  .declare {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%; } }
-
-.swiper-slide {
-  width: 350px !important; }
-  @media (max-width: 767px) {
-    .swiper-slide {
-      width: 240px !important; } }
 
 /*# sourceMappingURL=all.css.map */
