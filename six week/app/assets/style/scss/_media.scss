@@ -1,0 +1,78 @@
+//先針對media queries的width設為變數
+
+$pcMedia:1200px;
+$padMedia:991px;
+$phoneMedia:767px;
+$smallphoneMedia:575px;
+$iphone6:414px;
+$iphone5:374px;
+
+/*把變數帶入mixin中，此mixin只就單純把media queries寫到我的mixin中，
+並且使用我上面設立的變數來調動media queries的width*/
+
+//電腦
+@mixin media-1200Max() {
+      @media (max-width: $pcMedia) {
+            @content;
+      }
+}
+@mixin media-1200Min() {
+      @media (min-width: $pcMedia) {
+            @content;
+      }
+}
+//平板
+@mixin media-991Max() {
+      @media (max-width:$padMedia) {
+            @content;
+      }
+}
+@mixin media-991Min() {
+      @media (min-width:$padMedia) {
+            @content;
+      }
+}
+//小平板、大型手機
+@mixin media-767Max() {
+      @media (max-width: $phoneMedia) {
+            @content;
+      }
+ }
+@mixin media-767Min() {
+      @media (min-width: $phoneMedia) {
+            @content;
+      }
+ }
+//手機
+@mixin media-575Max() {
+      @media (max-width: $smallphoneMedia) {
+            @content;
+      }
+}
+@mixin media-575Min() {
+      @media (min-width: $smallphoneMedia) {
+            @content;
+      }
+}
+//iphone6
+@mixin media-414Max() {
+      @media (max-width: $iphone6) {
+            @content;
+      }
+}
+@mixin media-414Min() {
+      @media (min-width: $iphone6) {
+            @content;
+      }
+}
+//iphone5
+@mixin media-374Max() {
+      @media (max-width: $iphone5) {
+            @content;
+      }
+}
+@mixin media-374Min() {
+      @media (min-width: $iphone5) {
+            @content;
+      }
+}

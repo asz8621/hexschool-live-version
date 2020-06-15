@@ -1,0 +1,262 @@
+// 手機版點擊漢堡條鎖定畫面
+body.noScroll{
+    overflow: hidden;
+    @include media-575Min() {
+        overflow: auto;
+    }
+}
+// index
+.index.header{
+    height: 800px;
+    margin-bottom: 4.5rem;
+    @include media-767Max() {
+        margin-bottom: 3rem;
+    }
+    .navBg{
+        background-image: url(../images/banner.jpg);
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        margin-left: auto;
+        height: 800px;
+        @include media-767Max() {
+            filter:brightness(.5);
+            width: 100%;
+        }
+    }
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10;
+    transition: all .5s;
+    &.colorChange{
+        background-color: #000;
+        color: #fff;
+        border-bottom: 1px solid #606060;
+        .trademark{
+            color: #fff;
+            font-size: 1.75rem !important;
+            transition: all .5s;
+            &:hover{
+                color: #fff; 
+            }
+        }
+        .navbarMenuTitle {
+            font-size: 1.15rem;
+            transition: font-size .5s;
+        }
+        .cart, .mobileBar{
+            font-size: 1.75rem;
+            transition: font-size .5s;
+        }
+    }
+    .trademark{
+        color: #121212;
+        transition: all .5s;
+        @include media-767Max() {
+            color: #fff;
+        }
+        &:hover{
+            color: #000; 
+            transform: scale(1.1);
+            @include media-767Max() {
+                color: #fff;
+            }
+        }
+    }
+    .lineItem{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        @include media-575Min() {
+            display: none;
+        }
+    }
+    .cart, .mobileBar{
+        color: #fff;
+        transition: font-size .5s;
+    }
+    .navbarMenu{
+        a{
+            display: block;
+            color: #fff;
+        }
+        @include media-575Max() {
+            position: absolute;
+            top: 0;
+            left: -120%;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            background: #fff;
+            padding-top: 68px;
+            transition: all .5s;
+        }
+    }
+    .navbarMenuTitle{
+        transition: font-size .5s;
+        .material-icons{
+            @include media-575Min() { 
+                display: none;
+            }
+        }
+    }
+    .back{
+        display: none;
+    }
+}
+.navbar.active{
+    position: relative;
+   .logo {
+        opacity: 0;
+        @include media-575Min() { 
+            opacity: 1;
+        }
+    }
+    .navbarMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 68px;
+        transition: all .5s;
+        @include media-575Min() { 
+            position: initial;
+            width:100%;
+            height: auto;
+            flex-direction: row;
+            padding-top: 0;
+            background: transparent;
+            a{
+                display: block;
+                color: #fff;
+            }
+        }
+        .lineItem{
+            display: none;
+        }
+    }
+    .navbarMenuTitle{
+        font-size: 1.5rem;
+        color: $base;
+        border-bottom: 1px solid $grayish;
+        @include media-575Min() { 
+            border: none;
+            font-size: 1rem;
+        }
+        .material-icons{
+            transform: rotate(0deg);
+            transition: transform .5s;
+        }
+    }
+    .navbarMenuTitle.active{
+        .material-icons{
+            transform: rotate(180deg);
+            transition: transform .5s;
+        }
+        +.lineItem {
+            @include media-575Min() { 
+                display: none!important;
+            }
+        }
+    }
+
+    .back{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        z-index: 3;
+        @include media-575Min() { 
+            display: none;
+        }
+    }
+    .cart{
+        display: block;
+        z-index: 3;
+        color: black;
+        @include media-575Min() { 
+            color: #fff;
+        }
+    }
+}
+.bannerBtn{
+    padding: 18px 45px;
+    width: 40%;
+    @include media-991Max() {
+        width: 70%;
+    }
+    @include media-767Max() {
+        width: 100%;
+    }
+}
+
+
+// Product、product_detail
+.header.product{
+    height: auto;
+    margin-bottom: 117px;
+    .navBg,.banner{
+        display: none;
+    }
+    .navbarMenu{
+        a{
+            color: $base;
+        }
+    } 
+    .navbar.colorChange{
+        .navbarMenu{
+            a{
+                color: #fff;
+                @include media-575Max() {
+                    color: $base;
+                }
+            }
+        } 
+        .cart, .trademark, .mobileBar{
+            color: #fff;
+        }
+    }
+    .cart, .trademark, .mobileBar{
+        color: $base;
+    }
+    .lineItem{
+        a.active{
+            color: $primary!important;
+        }
+    }
+}
+.header.otherPages{
+    .navbar.active{
+        .cart{
+            @include media-575Max() {
+                color: $base;
+            }
+        }
+    }
+}
+.bannerMenu{
+    top: 84px;
+    left: 0;
+    @include media-374Min() {
+        overflow: auto;
+    }
+}
+
+// 結帳
+.header.checkoutProcess{
+    .navbar{
+        position: static!important;
+    }
+    .trademark{
+        color: #121212;
+    }
+}

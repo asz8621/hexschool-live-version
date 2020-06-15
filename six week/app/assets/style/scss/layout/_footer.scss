@@ -1,0 +1,43 @@
+// 訂閱
+.subscription{
+    height: 400px;
+    @include media-575Max() {
+        height: 225px;
+    }
+    @include media-374Max() {
+        height: 275px;
+    }
+    .title{
+        @include media-575Max() {
+            text-align: left;
+        }
+    }
+}
+.subscriptionBg{
+    background-image: url(../images/subscription-bg.jpg);
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include media-767Max() {
+        filter:brightness(.5);
+    }
+}
+
+// footer
+.declare{
+    a{
+        display: block;
+    }
+    @include media-767Max() {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.swiper-slide{
+    width: 350px!important;
+    @include media-767Max() {
+        width: 240px!important;
+    }
+}

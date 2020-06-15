@@ -1,0 +1,73 @@
+/* 瀑布流 */
+.lineItem{
+    overflow: auto;
+}
+.cardColumns{
+    margin:0;
+    padding:0;
+    column-count: 3;
+    column-gap: 30px;
+    @include media-991Max() {
+        column-gap: 15px;
+    }
+    @include media-575Max() {
+        column-count: auto;
+        column-gap: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  }
+.cardBody{
+    list-style:none;
+    padding:0;
+    margin:0 0 48px 0;
+    display:inline-block;
+    @include media-575Max() {
+        width: 49%;
+    }
+}
+.imgSquare{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    @include media-991Max() {
+        width: 250px;
+        height: 250px;
+    }
+    @include media-575Max() {
+        height: 161px;
+    }
+}
+.imgRectangle{
+    width: 350px;
+    height: 480px;
+    object-fit: cover;
+    @include media-991Max() {
+        width: 240px;
+        height: 350px;
+    }
+    @include media-575Max() {
+        height: 161px;
+    }
+}
+.imgShortSquare{
+    width: 350px;
+    height: 240px;
+    object-fit: cover;
+    @include media-991Max() {
+        width: 250px;
+        height: 140px;
+    }
+    @include media-575Max() {
+        height: 161px;
+    }
+}
+
+.pageLink{
+    color: $base;     
+}
+.pageLink.active{
+    color: $primary;
+    border-bottom: 1px solid $primary;
+}

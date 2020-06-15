@@ -1,0 +1,112 @@
+.productImg {
+    // max-width: 60%;
+    @include media-767Max() {
+        max-width: 100vw;
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-bottom: 200px;
+    }
+}
+.productInfo {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    @include media-767Max() {
+        width: 95%;
+        top: 50%;
+        right: 2.5%;
+        transform: translate(0, 0);
+    }
+    @include media-414Max(){
+        top: 45%;
+    }
+}
+.formm{
+    @include media-767Max() {
+        position: relative;
+    }
+    .price{
+        @include media-767Max() {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .addcaet {
+        width: 70%;
+        @include media-767Max() {
+            width: 100%;
+        }
+    }
+    .qyt{
+        @include media-767Max() {
+            width: 40%;
+        }
+        @include media-414Max(){
+            width: 50%;
+        }
+    }
+    .qtyText{
+        width: 35px;
+        @include media-767Max() {
+            width: 100%;
+        }
+    }
+}
+
+.productDescription{
+    width: 65%;
+    @include media-767Max() {
+        width: 100%;
+    }
+}
+.productDetail{
+    width: 35%;
+    @include media-767Max() {
+        width: 100%;
+    }
+}
+
+.modal.fade.modal-right .modal-dialog {
+    transform: translate(105%, 0);
+    position: fixed;
+    right:0;
+		margin: auto;
+		width: 540px;
+		height: 100%;
+        // transform: translate3d(0%, 0, 0);
+        @include media-767Max() {
+            width: 100%;
+        }
+  }
+  
+  .modal.show.modal-right .modal-dialog {
+    transform: none;
+  }
+  .modal.modal-right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+.modal-header {
+    border-bottom: none;
+}
+.amount{
+    width: 70%;
+    @include media-575Max() {
+        width: 100%;
+    }
+}
+.goCheckout{
+    width: 70%;
+    @include media-575Max() {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        width: calc(100% - 32px);
+    }
+}

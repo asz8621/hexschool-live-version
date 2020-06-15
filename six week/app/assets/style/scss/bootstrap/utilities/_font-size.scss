@@ -1,0 +1,9 @@
+// stylelint-disable declaration-no-important
+
+// Common values
+// @each $position in $positions {
+//   .pos-#{$position} { position: $position !important; }
+// }
+@each $name,$value in $font-size {
+    .fz-#{$name} { font-size: $value !important; }
+  }

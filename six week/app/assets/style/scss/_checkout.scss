@@ -1,0 +1,199 @@
+.imgThumbnail{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+input[type=checkbox] {
+    cursor: pointer;
+    width: 16px;
+    height: 14px;
+    position: relative;
+  }
+  
+  input[type=checkbox]:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -2px;
+    content: "";
+    border: 1px solid #000;
+    color: #fff;
+    background: #fff;
+    display: inline-block;
+    visibility: visible;
+    padding: 0px 4px;
+    border-radius: 2px;
+  }
+  
+  input[type=checkbox]:checked:after {
+    content: "✓";
+    font-size: 12px;
+    background-color: $primary;
+  }
+.shoppingList{
+
+}
+.orderSummary{
+    .arrow{
+        transform:rotate(180deg);
+    }
+}
+.shoppingList {
+    @include media-767Max {
+        cursor: pointer;
+    }
+    .shoppingDetails {
+        display: block;
+        @include media-767Max {
+            display: none;
+        }
+    }
+    .totalPrice{
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    &.active{
+        .shoppingDetails {
+            display: block;
+        }
+        .orderSummary{
+            .arrow{
+                transform:rotate(180deg);
+            }
+        }
+        .totalPrice{
+            opacity: 0;
+            transition: all 0.3s;
+        }
+    }
+}
+
+// Payment
+.contact{
+    cursor: pointer;
+    .material-icons{
+        transform: rotate(0deg);
+        transition: transform .5s;
+    }
+    &.active{
+        .contactInfo{
+            padding-top: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contactWrapper{
+            flex-direction: column;
+            align-items: start;
+        }
+        .material-icons{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            transform: rotate(180deg);
+            transition: transform .5s;
+        }
+        .contactTextlen{
+            white-space:normal; 
+            overflow:auto;
+        }
+
+        .contactName{
+            display: block;
+            &::after{
+                content: '';
+            }
+        }
+        .contactEmail{
+            &::after{
+                @include media-767Max {
+                    content: '';
+                }
+            }
+        }
+        .contactPhone{
+            display: block;
+            &::before{
+                content: '';
+            }
+        }
+        .contactAddress{
+            padding-top: 16px;
+            text-overflow:clip;
+        }
+    }
+    .contactTitle{
+        white-space:nowrap;
+    }
+    .contactTextlen{
+        white-space:nowrap; 
+        overflow:hidden;
+    }
+    .contactName{
+        @include media-767Max {
+            display: none;
+        }
+        &::after{
+            content: '\00a0/\00a0';
+        }
+    }
+    .contactEmail{
+        @include media-767Max {
+        white-space:nowrap; 
+        overflow:hidden;
+        }
+        @include media-575Max {
+            text-overflow:ellipsis;
+        }
+        &::after{
+            @include media-767Max {
+                content: '...';
+            }
+        }
+    }
+    .contactPhone{
+        @include media-767Max {
+            display: none;
+        }
+        &::before{
+            content: '\00a0/\00a0';
+        }
+    }
+    .contactAddress{
+        text-overflow:ellipsis;
+    }
+}
+
+
+
+.complete.header{
+    height: calc(100vh - 117px);
+    margin-bottom: 4.5rem;
+    @include media-767Max() {
+        margin-bottom: 3rem;
+    }
+    .navBg{
+        background-image: url(../images/done.jpg);
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        margin-left: auto;
+        height: 100vh;
+        @include media-767Max() {
+            filter:brightness(.5);
+            width: 100%;
+        }
+    }
+    .bannerBtn {
+        width: 90%;
+        @include media-767Max() {
+        position: absolute;
+        left: 5%;
+        bottom: 24px;
+        }
+    }
+    .navbarMenu, .cart, .mobileBar {
+        display: none!important;
+    }
+}

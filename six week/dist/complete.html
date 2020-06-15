@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="assets/style/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/style/swiper.min.css">
+</head>
+<!-- 1-header -->
+<header class="header complete pos-r">
+    <div class="navBg bgCover pos-a"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="navbarContent d-flex align-items-center justify-content-between">
+                        <i class="back material-icons btn px-1 py-3 p-lg-4">arrow_back</i>
+                        <i class="mobileBar material-icons btn d-inline-block d-sm-none p-0 p-md-4">menu</i>  
+                        <a href="index.html" class="logo py-3 py-lg-4"><h1 class="trademark m-0 fz-m">Craftsman</h1></a>
+                        <div class="d-flex">
+                            <ul class="navbarMenu d-flex m-0">
+                                <li class="px-3 p-md-0 pos-r">
+                                    <a href="Product.html" class="navbarMenuTitle d-flex align-items-center py-3 p-md-4">
+                                        <span>Product</span>
+                                        <i class="material-icons ml-auto">keyboard_arrow_down</i>
+                                    </a>
+                                    <ul class="lineItem d-sm-none">
+                                        <li class="mb-3"><a href="Product.html" class="text-secondary">ALL<sup>24</sup></a></li>
+                                        <li class="mb-3"><a href="Product.html" class="text-secondary">BOWL<sup>10</sup></a></li>
+                                        <li class="mb-3"><a href="Product.html" class="text-secondary">CUP<sup>8</sup></a></li>
+                                        <li class="mb-3"><a href="Product.html" class="text-secondary">PLATE<sup>3</sup></a></li>
+                                        <li><a href="Product.html" class="text-secondary">VASE<sup>3</sup></a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-3 p-md-0 pos-r"><a href="javascrpite:void(0);" class="navbarMenuTitle py-3 p-md-4">Blog</a></li>
+                                <li class="px-3 p-md-0 pos-r"><a href="javascrpite:void(0);" class="navbarMenuTitle py-3 p-md-4">Contact</a></li>
+                            </ul>
+                            <i data-toggle="modal" data-target="#add" class="cart material-icons btn py-3 p-md-4">shopping_cart</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+
+
+
+    <section class="banner vh-100">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center pr-xl-8">  
+                    <h2 class="title fz-xxxl mb-4">Well Done!</h2>
+                    <span class="subtitle mb-7">Your order has been received. We’II email you an order confirmation with details.</span>
+                    <a class="bannerBtn btn btn-primary" href="index.html">Continue shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</header>
+
+
+  
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- <script src="assets/js/swiper.min.js"></script> -->
+<script src="assets/js/all.js"></script>
+<script>
+    colorChange();
+    $(window).scroll(function () {
+        colorChange();
+    });
+        // navbar 滾動效果
+    function colorChange(){
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal > 50){
+            $(".navbar").addClass('colorChange');
+        }else{
+            $(".navbar").removeClass('colorChange');
+        }
+    }
+</script>
+
+<script>
+    // 以訂閱電子報的 h2 抓 container margin-left: auto 值
+    var leftSpace = $("#controlSliderMargin").offset().left;
+    //載入swiper插件
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        autoResize: true,
+        slidesOffsetBefore: leftSpace,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            767: {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            },
+
+        },
+        on: {
+            resize: function(){
+                var leftSpace = $("#controlSliderMargin").offset().left;
+                $('.swiper-wrapper').css({"transform": "translate3d(" + leftSpace + "px, 0px, 0px)"});
+            }, 
+        },
+    });
+</script>
+
+    </body>
+</html>

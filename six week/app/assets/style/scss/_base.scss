@@ -1,0 +1,34 @@
+// 共用
+.bgCover{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+}
+.subtitle{
+    font-size: 1.5rem;
+    color: $minor;
+    @include media-767Max() {
+        color: $tricolor;
+        text-align: center;
+    }
+}
+.title{
+    line-height: 1.5;
+    @include media-767Max() {
+        color: #fff;
+        text-align: center;
+    }
+}
+.modalImg{
+    width: 112px;
+    height: 112px;
+}
+.qtySize{
+    width: 57px;
+    @include media-374Max(){
+        width: 25px;
+    }
+}
